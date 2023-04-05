@@ -1,9 +1,6 @@
-function generatePassword() {
-    let length = 12 
-    let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~`|}{[]:;?><,./-=";
-    let password = "";
-    for (let i = 0, n = charset.length; i < length; i++) {
-        password += charset.charAt(Math.floor(Math.random() * n));
-    }
-    document.getElementById("password").innerHTML = password;
-}
+let nombre = prompt("¿Cuál es su nombre?")
+let frase1 = "Hola, "
+let frase2 = " bienvenido a este sitio web"
+let Saludo = frase1 + nombre + frase2
+alert(Saludo)
+
